@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>轨迹导入</title>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="This is my page">
+    <link href="/static/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/static/css/select.css" rel="stylesheet" type="text/css" />
+    <link href="/static/css/default.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/static/js/jquery.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.idTabs.min.js"></script>
+    <script type="text/javascript" src="/static/js/select-ui.min.js"></script>
+    <script type="text/javascript" src="/static/js/kindeditor.js"></script>
+    <script type="text/javascript">
+    KE.show({
+        id: 'content7',
+        cssPath: './index.css'
+    });
+    </script>
+</head>
+
+<body class="sarchbody">
+    <div class="place">
+        <span>位置：</span>
+        <ul class="placeul">
+            <li>轨迹导入</li>
+        </ul>
+    </div>
+    <div class="formbody">
+        <div id="usual1" class="usual">
+            <!-- <form id="form" name="form" method="post" action="">
+                <ul class="seachform1">
+                    <li><label>导入</label><input name="cpName" type="text"
+                        class="scinput1"/></li>
+                </ul>
+                <ul class="seachform1">
+                    <li class="sarchbtn"><label>&nbsp;</label><input name=""
+                        type="submit" class="scbtn" value="提交" /></li>
+                </ul>
+            </form> -->
+            <form method="post" enctype="multipart/form-data" action="/importGPSSubmit/">
+                {% csrf_token %}
+                <input type="file" name="GPS_file"><br><br>
+                <input type="submit" value="提交" /><br><br>
+            </form>
+        </div>
+        <div class="formtitle">
+            <span>导入结果</span>
+        </div>
+        <table class="tablelist">
+            <tbody>
+                <tr>
+                    <td>导入失败！</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

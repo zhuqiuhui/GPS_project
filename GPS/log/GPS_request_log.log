@@ -1,0 +1,745 @@
+2017-09-01 06:19:24,780 [Thread-2:123145366032384] [django.request:152] [base:get_response] [WARNING]- Not Found: /admin
+2017-09-01 06:35:50,897 [Thread-2:123145365524480] [django.request:152] [base:get_response] [WARNING]- Not Found: /admin
+2017-09-01 06:35:53,528 [Thread-3:123145369731072] [django.request:152] [base:get_response] [WARNING]- Not Found: /admin
+2017-09-01 06:36:02,224 [Thread-4:123145365524480] [django.request:152] [base:get_response] [WARNING]- Not Found: /admin
+2017-09-01 06:39:28,161 [Thread-2:123145356283904] [django.request:152] [base:get_response] [WARNING]- Not Found: /admin
+2017-09-01 06:39:30,146 [Thread-3:123145360490496] [django.request:152] [base:get_response] [WARNING]- Not Found: /admin
+2017-09-01 07:18:08,451 [Thread-3:123145362579456] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /gpsPoint/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS_app/views.py", line 15, in select
+    point_list = mdoels.Points.objects.all()
+NameError: global name 'mdoels' is not defined
+2017-09-01 07:32:14,268 [Thread-2:123145316352000] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-09-01 07:32:28,371 [Thread-4:123145316352000] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-09-01 08:51:54,627 [Thread-4:123145497911296] [django.request:152] [base:get_response] [WARNING]- Not Found: /main/footer.html
+2017-09-01 08:55:46,452 [Thread-6:123145493704704] [django.request:152] [base:get_response] [WARNING]- Not Found: /footer.html
+2017-09-01 08:56:00,242 [Thread-9:123145493704704] [django.request:152] [base:get_response] [WARNING]- Not Found: /main/footer.html
+2017-09-01 08:58:56,943 [Thread-3:123145328922624] [django.request:152] [base:get_response] [WARNING]- Not Found: /main/mainFooter/
+2017-09-01 08:59:57,311 [Thread-5:123145560776704] [django.request:152] [base:get_response] [WARNING]- Not Found: /mainFooter/css/style.css
+2017-09-01 09:00:03,875 [Thread-8:123145569189888] [django.request:152] [base:get_response] [WARNING]- Not Found: /mainFooter/css/style.css
+2017-09-01 09:12:55,109 [Thread-4:123145418903552] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/style.css
+2017-09-01 09:15:18,842 [Thread-7:123145418903552] [django.request:152] [base:get_response] [WARNING]- Not Found: /templates/css/style.css
+2017-09-01 09:18:26,140 [Thread-10:123145418903552] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/style.css
+2017-09-01 09:19:42,991 [Thread-13:123145418903552] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/style.css
+2017-09-01 09:21:15,915 [Thread-4:123145560305664] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/style.css
+2017-09-01 09:22:32,707 [Thread-4:123145490022400] [django.request:152] [base:get_response] [WARNING]- Not Found: /templates/css/style.css
+2017-09-01 09:26:47,369 [Thread-4:123145350090752] [django.request:152] [base:get_response] [WARNING]- Not Found: /media/css/style.css
+2017-09-01 10:02:11,700 [Thread-7:123145420845056] [django.request:152] [base:get_response] [WARNING]- Not Found: /mainTop/images/icon0.png
+2017-09-01 10:02:11,707 [Thread-8:123145425051648] [django.request:152] [base:get_response] [WARNING]- Not Found: /mainTop/images/icon5.png
+2017-09-01 10:02:11,747 [Thread-9:123145420845056] [django.request:152] [base:get_response] [WARNING]- Not Found: /mainTop/images/topbg.gif
+2017-09-01 10:03:03,022 [Thread-22:123145420845056] [django.request:152] [base:get_response] [WARNING]- Not Found: /mainTop/images/topbg.gif
+2017-09-01 10:04:05,735 [Thread-32:123145420845056] [django.request:152] [base:get_response] [WARNING]- Not Found: /mainTop/images/topbg.gif
+2017-09-01 10:04:10,804 [Thread-41:123145420845056] [django.request:152] [base:get_response] [WARNING]- Not Found: /mainTop/images/topbg.gif
+2017-09-01 10:05:50,346 [Thread-50:123145420845056] [django.request:152] [base:get_response] [WARNING]- Not Found: /mainTop/images/topbg.gif
+2017-09-01 10:18:20,130 [Thread-7:123145376190464] [django.request:152] [base:get_response] [WARNING]- Not Found: /mainLeft/js/jquery.js
+2017-09-01 10:18:33,260 [Thread-18:123145393016832] [django.request:152] [base:get_response] [WARNING]- Not Found: /mainLeft/js/jquery.js
+2017-09-04 09:58:16,304 [Thread-8:123145577922560] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /importGPSSubmit
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/utils/deprecation.py", line 138, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/middleware/common.py", line 63, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/middleware/common.py", line 101, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/importGPSSubmit/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2017-09-05 14:31:35,880 [Thread-8:123145342668800] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /importGPSSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 62, in importGPSSubmit
+    handle_upload_file(request.FILES.get('GPS_file', None))
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/tool/FileTools.py", line 18, in handle_upload_file
+    logger.info('[handle_upload_file] allPoints len:' + len(allPoints))
+TypeError: cannot concatenate 'str' and 'int' objects
+2017-09-05 14:33:29,039 [Thread-8:123145482203136] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /importGPSSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 62, in importGPSSubmit
+    handle_upload_file(request.FILES.get('GPS_file', None))
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/tool/FileTools.py", line 21, in handle_upload_file
+    insertPoints = findTransitionPoint(allPoints)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/tool/FileTools.py", line 55, in findTransitionPoint
+    return insertPoints
+NameError: global name 'insertPoints' is not defined
+2017-09-05 14:51:53,670 [Thread-8:123145363816448] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /importGPSSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 62, in importGPSSubmit
+    handle_upload_file(request.FILES.get('GPS_file', None))
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/tool/FileTools.py", line 19, in handle_upload_file
+    logger.info('[handle_upload_file] allPoints:' + allPoints)
+TypeError: cannot concatenate 'str' and 'list' objects
+2017-09-06 16:13:25,261 [Thread-9:123145379663872] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /importGPSSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 62, in importGPSSubmit
+    handle_upload_file(request.FILES.get('GPS_file', None))
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/tool/FileTools.py", line 37, in handle_upload_file
+    saveGPSPoint(insertPoints)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/tool/FileTools.py", line 42, in saveGPSPoint
+    GPSPointObject = models.Points(latitude=point[0], longitude=point[1],
+NameError: global name 'models' is not defined
+2017-09-07 11:34:53,445 [Thread-6:123145514692608] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-09-07 14:15:18,350 [Thread-11:123145329815552] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /displayGPSByDateSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 74, in displayGPSByDateSubmit
+    logger.info('[view.displayGPSByDate]' + str(targetDate))
+UnboundLocalError: local variable 'targetDate' referenced before assignment
+2017-09-07 14:20:32,608 [Thread-8:123145432973312] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /displayGPSByDateSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 74, in displayGPSByDateSubmit
+    logger.info('[view.displayGPSByDate]' + str(targetDate))
+NameError: global name 'targetDate' is not defined
+2017-09-07 14:21:13,783 [Thread-8:123145523961856] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /displayGPSByDateSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 79, in displayGPSByDateSubmit
+    return render(request, 'displayGPS_01_res.html')
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: displayGPS_01_res.html
+2017-09-07 14:41:48,812 [Thread-9:123145565474816] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /displayGPSByDateSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 80, in displayGPSByDateSubmit
+    return render(request, 'displayGPS_01_res.html')
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: displayGPS_01_res.html
+2017-09-07 15:03:09,930 [Thread-8:123145448034304] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /displayGPSByDateSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 80, in displayGPSByDateSubmit
+    return render(request, 'displayGPS_01_res.html', {'searchDate':searchDate, 'points':points})
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/base.py", line 571, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 40: 'searchDate'. Did you forget to register or load this tag?
+2017-09-07 15:04:20,313 [Thread-16:123145447497728] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /displayGPSByDateSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 80, in displayGPSByDateSubmit
+    return render(request, 'displayGPS_01_res.html', {'searchDate':searchDate, 'points':points})
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/base.py", line 571, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 40: 'searchDate'. Did you forget to register or load this tag?
+2017-09-08 09:13:38,979 [Thread-8:123145468887040] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /displayGPSByDateSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 81, in displayGPSByDateSubmit
+    return render(request, 'displayGPS_01_res.html', {'searchDate':searchDate, 'points':json.dumps(points)})
+  File "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 244, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <QuerySet []> is not JSON serializable
+2017-09-08 09:16:58,237 [Thread-15:123145468887040] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /displayGPSByDateSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 81, in displayGPSByDateSubmit
+    return render(request, 'displayGPS_01_res.html', {'searchDate':searchDate, 'points':json.dumps(points)})
+  File "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 244, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <QuerySet []> is not JSON serializable
+2017-09-08 09:20:53,615 [Thread-22:123145469423616] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /displayGPSByDateSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 81, in displayGPSByDateSubmit
+    return render(request, 'displayGPS_01_res.html', {'searchDate':searchDate, 'points':json.dumps(points)})
+  File "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 244, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <QuerySet []> is not JSON serializable
+2017-09-08 09:39:19,124 [Thread-8:123145325891584] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /displayGPSByDateSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 81, in displayGPSByDateSubmit
+    return render(request, 'displayGPS_01_res.html', {'searchDate':json.dumps(searchDate), 'points':json.dumps(points)})
+  File "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 244, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <QuerySet []> is not JSON serializable
+2017-09-08 09:47:03,960 [Thread-8:123145389780992] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /displayGPSByDateSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 81, in displayGPSByDateSubmit
+    return render(request, 'displayGPS_01_res.html', {'searchDate':searchDate, 'points':serializers.serialize('json', points)})
+NameError: global name 'serializers' is not defined
+2017-09-08 10:46:41,604 [Thread-80:123145374998528] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /displayGPSByDateSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 82, in displayGPSByDateSubmit
+    return render(request, 'displayGPS_01_res.html', {'searchDate':searchDate, 'points':serializers.serialize('json', list(points))})
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/template/base.py", line 486, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Could not parse the remainder: '[point].latitude' from 'pointsList[point].latitude'
+2017-09-08 16:34:58,469 [Thread-8:123145443856384] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /inferTMSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view GPS.view.inferTMSubmit didn't return an HttpResponse object. It returned None instead.
+2017-09-09 02:26:47,655 [Thread-2:123145337925632] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /inferTMSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view GPS.view.inferTMSubmit didn't return an HttpResponse object. It returned None instead.
+2017-09-09 02:43:13,946 [Thread-7:123145471008768] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /inferTMSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view GPS.view.inferTMSubmit didn't return an HttpResponse object. It returned None instead.
+2017-09-09 02:44:49,024 [Thread-7:123145484447744] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /inferTMSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view GPS.view.inferTMSubmit didn't return an HttpResponse object. It returned None instead.
+2017-09-09 02:46:45,030 [Thread-14:123145463951360] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /feaAnalysisSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 120, in feaAnalysisSubmit
+    return render(request, 'feaAnalysis_res.html', {'searchDate':searchDate, 'fea':serializers.serialize('json', list(fea))})
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/serializers/__init__.py", line 129, in serialize
+    s.serialize(queryset, **options)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/serializers/base.py", line 84, in serialize
+    concrete_model = obj._meta.concrete_model
+AttributeError: 'tuple' object has no attribute '_meta'
+2017-09-09 02:59:50,507 [Thread-7:123145527353344] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /feaAnalysisSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 119, in feaAnalysisSubmit
+    fea = feaCalculation(points)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/tool/feaCalculate.py", line 38, in feaCalculation
+    vfea = getVFeature(pointList)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/tool/feaCalculate.py", line 77, in getVFeature
+    _75thV = vSetArray[_75thIndex]
+IndexError: only integers, slices (`:`), ellipsis (`...`), numpy.newaxis (`None`) and integer or boolean arrays are valid indices
+2017-09-09 07:13:06,200 [Thread-7:123145589141504] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /feaAnalysisSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 119, in feaAnalysisSubmit
+    fea = feaCalculation(points)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/tool/feaCalculate.py", line 39, in feaCalculation
+    segmentsFea = getSegment(pointList)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/tool/feaCalculate.py", line 51, in getSegment
+    tempFea = getAllFea(segment)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/tool/feaCalculate.py", line 77, in getAllFea
+    BSR = getBSR(segment, 'busInfo.txt')
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/tool/feaCalculate.py", line 266, in getBSR
+    busInfoFile = open(busInfoPath)
+IOError: [Errno 2] No such file or directory: 'busInfo.txt'
+2017-09-09 07:14:46,569 [Thread-7:123145539825664] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /feaAnalysisSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 119, in feaAnalysisSubmit
+    fea = feaCalculation(points)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/tool/feaCalculate.py", line 39, in feaCalculation
+    segmentsFea = getSegment(pointList)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/tool/feaCalculate.py", line 51, in getSegment
+    tempFea = getAllFea(segment)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/tool/feaCalculate.py", line 77, in getAllFea
+    BSR = getBSR(segment, '/static/file/busInfo.txt')
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/tool/feaCalculate.py", line 266, in getBSR
+    busInfoFile = open(busInfoPath)
+IOError: [Errno 2] No such file or directory: '/static/file/busInfo.txt'
+2017-09-09 07:16:37,535 [Thread-7:123145338093568] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /feaAnalysisSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 120, in feaAnalysisSubmit
+    return render(request, 'feaAnalysis_res.html', {'searchDate':searchDate, 'points':serializers.serialize('json', points), 'fea':serializers.serialize('json', fea)})
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/serializers/__init__.py", line 129, in serialize
+    s.serialize(queryset, **options)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/serializers/base.py", line 84, in serialize
+    concrete_model = obj._meta.concrete_model
+AttributeError: 'tuple' object has no attribute '_meta'
+2017-09-09 07:18:50,942 [Thread-8:123145445101568] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /feaAnalysisSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 120, in feaAnalysisSubmit
+    return render(request, 'feaAnalysis_res.html', {'searchDate':searchDate, 'points':serializers.serialize('json', list(points)), 'fea':serializers.serialize('json', fea)})
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/serializers/__init__.py", line 129, in serialize
+    s.serialize(queryset, **options)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/serializers/base.py", line 84, in serialize
+    concrete_model = obj._meta.concrete_model
+AttributeError: 'tuple' object has no attribute '_meta'
+2017-09-09 07:20:17,622 [Thread-7:123145472483328] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /feaAnalysisSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 122, in feaAnalysisSubmit
+    return render(request, 'feaAnalysis_res.html', {'searchDate':searchDate, 'points':serializers.serialize('json', list(points)), 'fea':serializers.serialize('json', fea)})
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/serializers/__init__.py", line 129, in serialize
+    s.serialize(queryset, **options)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/serializers/base.py", line 84, in serialize
+    concrete_model = obj._meta.concrete_model
+AttributeError: 'tuple' object has no attribute '_meta'
+2017-09-09 07:21:30,270 [Thread-13:123145472483328] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /feaAnalysisSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 122, in feaAnalysisSubmit
+    return render(request, 'feaAnalysis_res.html', {'searchDate':searchDate, 'points':serializers.serialize('json', list(points)), 'fea':serializers.serialize('json', fea)})
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/serializers/__init__.py", line 129, in serialize
+    s.serialize(queryset, **options)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/serializers/base.py", line 84, in serialize
+    concrete_model = obj._meta.concrete_model
+AttributeError: 'tuple' object has no attribute '_meta'
+2017-09-09 07:22:15,401 [Thread-7:123145376280576] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /feaAnalysisSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 122, in feaAnalysisSubmit
+    return render(request, 'feaAnalysis_res.html', {'searchDate':searchDate, 'points':serializers.serialize('json', list(points)), 'fea':serializers.serialize('json', list(fea))})
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/serializers/__init__.py", line 129, in serialize
+    s.serialize(queryset, **options)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/serializers/base.py", line 84, in serialize
+    concrete_model = obj._meta.concrete_model
+AttributeError: 'tuple' object has no attribute '_meta'
+2017-09-09 07:24:11,800 [Thread-13:123145375744000] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /feaAnalysisSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 122, in feaAnalysisSubmit
+    return render(request, 'feaAnalysis_res.html', {'searchDate':searchDate, 'points':serializers.serialize('json', list(points)), 'fea':serializers.serialize('json', list(fea))})
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/serializers/__init__.py", line 129, in serialize
+    s.serialize(queryset, **options)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/serializers/base.py", line 84, in serialize
+    concrete_model = obj._meta.concrete_model
+AttributeError: 'tuple' object has no attribute '_meta'
+2017-09-09 07:24:17,809 [Thread-15:123145354711040] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /feaAnalysisSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 122, in feaAnalysisSubmit
+    return render(request, 'feaAnalysis_res.html', {'searchDate':searchDate, 'points':serializers.serialize('json', list(points)), 'fea':serializers.serialize('json', list(fea))})
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/serializers/__init__.py", line 129, in serialize
+    s.serialize(queryset, **options)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/serializers/base.py", line 84, in serialize
+    concrete_model = obj._meta.concrete_model
+AttributeError: 'tuple' object has no attribute '_meta'
+2017-09-09 07:25:31,494 [Thread-22:123145355247616] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /feaAnalysisSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 122, in feaAnalysisSubmit
+    return render(request, 'feaAnalysis_res.html', {'searchDate':searchDate, 'points':serializers.serialize('json', list(points)), 'fea':serializers.serialize('json', list(fea))})
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/serializers/__init__.py", line 129, in serialize
+    s.serialize(queryset, **options)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/serializers/base.py", line 84, in serialize
+    concrete_model = obj._meta.concrete_model
+AttributeError: 'tuple' object has no attribute '_meta'
+2017-09-09 08:05:30,589 [Thread-28:123145375207424] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /feaAnalysisSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 122, in feaAnalysisSubmit
+    return render(request, 'feaAnalysis_res.html', {'searchDate':searchDate, 'points':serializers.serialize('json', list(points)), 'fea':serializers.serialize('json', list(fea))})
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/serializers/__init__.py", line 129, in serialize
+    s.serialize(queryset, **options)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/serializers/base.py", line 84, in serialize
+    concrete_model = obj._meta.concrete_model
+AttributeError: 'tuple' object has no attribute '_meta'
+2017-09-09 08:17:46,102 [Thread-7:123145391964160] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /feaAnalysisSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 125, in feaAnalysisSubmit
+    return render(request, 'feaAnalysis_res.html', {'searchDate':searchDate, 'points':serializers.serialize('json', list(points)), 'listFea':serializers.serialize('json', list(listFea))})
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/serializers/__init__.py", line 129, in serialize
+    s.serialize(queryset, **options)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/serializers/base.py", line 84, in serialize
+    concrete_model = obj._meta.concrete_model
+AttributeError: 'list' object has no attribute '_meta'
+2017-09-09 08:25:50,042 [Thread-7:123145374912512] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /feaAnalysisSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 126, in feaAnalysisSubmit
+    return render_to_response('feaAnalysis_res.html', {'searchDate':searchDate, 'points':json.dumps(points), 'fea':json.dumps(fea)})
+NameError: global name 'render_to_response' is not defined
+2017-09-09 08:26:52,978 [Thread-7:123145485156352] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /feaAnalysisSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 127, in feaAnalysisSubmit
+    return render_to_response('feaAnalysis_res.html', {'searchDate':searchDate, 'points':json.dumps(points), 'fea':json.dumps(fea)})
+  File "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 244, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <QuerySet [<Points: Points object>, <Points: Points object>, <Points: Points object>, <Points: Points object>, <Points: Points object>, <Points: Points object>, <Points: Points object>, <Points: Points object>, <Points: Points object>, <Points: Points object>, <Points: Points object>, <Points: Points object>, <Points: Points object>, <Points: Points object>, <Points: Points object>, <Points: Points object>, <Points: Points object>, <Points: Points object>]> is not JSON serializable
+2017-09-09 08:28:40,212 [Thread-13:123145485156352] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /feaAnalysisSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 127, in feaAnalysisSubmit
+    return render_to_response('feaAnalysis_res.html', {'searchDate':searchDate, 'points':json.dumps(points), 'fea':json.dumps(fea)})
+  File "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 244, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <QuerySet [<Points: Points object>, <Points: Points object>, <Points: Points object>, <Points: Points object>, <Points: Points object>, <Points: Points object>, <Points: Points object>, <Points: Points object>, <Points: Points object>, <Points: Points object>, <Points: Points object>, <Points: Points object>, <Points: Points object>, <Points: Points object>, <Points: Points object>, <Points: Points object>, <Points: Points object>, <Points: Points object>]> is not JSON serializable
+2017-09-09 08:31:44,417 [Thread-2:123145498025984] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /inferTMSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view GPS.view.inferTMSubmit didn't return an HttpResponse object. It returned None instead.
+2017-09-10 05:53:25,608 [Thread-7:123145439412224] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /inferTMSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 140, in inferTMSubmit
+    TMLabel, TMLabelPro = loadModelPredict(fea)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/tool/classifyMain.py", line 9, in loadModelPredict
+    rf = joblib.load('../static/file/rf_model.m')
+  File "/usr/local/lib/python2.7/site-packages/sklearn/externals/joblib/numpy_pickle.py", line 567, in load
+    with open(filename, 'rb') as f:
+IOError: [Errno 2] No such file or directory: '../static/file/rf_model.m'
+2017-09-10 05:53:46,674 [Thread-14:123145418379264] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /inferTMSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 140, in inferTMSubmit
+    TMLabel, TMLabelPro = loadModelPredict(fea)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/tool/classifyMain.py", line 9, in loadModelPredict
+    rf = joblib.load('../static/file/rf_model.m')
+  File "/usr/local/lib/python2.7/site-packages/sklearn/externals/joblib/numpy_pickle.py", line 567, in load
+    with open(filename, 'rb') as f:
+IOError: [Errno 2] No such file or directory: '../static/file/rf_model.m'
+2017-09-10 05:54:16,853 [Thread-7:123145421082624] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /inferTMSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 142, in inferTMSubmit
+    {'searchDate':searchDate, 'points':serializers.serialize('json', list(points)), 'TMLabel':json.dumps(TMLabel), 'TMLabelPro':json.dumps(TMLabelPro)})
+  File "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 244, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: array([ 0.22,  0.18,  0.1 ,  0.  ,  0.03,  0.47]) is not JSON serializable
+2017-09-10 05:55:07,035 [Thread-8:123145571119104] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /inferTMSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 142, in inferTMSubmit
+    {'searchDate':searchDate, 'points':serializers.serialize('json', list(points)), 'TMLabel':json.dumps(TMLabel), 'TMLabelPro':serializers.serialize('json', list(TMLabelPro))})
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/serializers/__init__.py", line 129, in serialize
+    s.serialize(queryset, **options)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/serializers/base.py", line 84, in serialize
+    concrete_model = obj._meta.concrete_model
+AttributeError: 'numpy.ndarray' object has no attribute '_meta'
+2017-09-10 05:55:33,647 [Thread-7:123145388306432] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /inferTMSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 142, in inferTMSubmit
+    {'searchDate':searchDate, 'points':serializers.serialize('json', list(points)), 'TMLabel':json.dumps(TMLabel), 'TMLabelPro':serializers.serialize('json', TMLabelPro)})
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/serializers/__init__.py", line 129, in serialize
+    s.serialize(queryset, **options)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/serializers/base.py", line 84, in serialize
+    concrete_model = obj._meta.concrete_model
+AttributeError: 'numpy.ndarray' object has no attribute '_meta'
+2017-09-11 09:43:33,762 [Thread-7:123145598914560] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /inferTMSubmit/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zhuqiuhui/zqh/code/workspace/GPS_project/GPS/GPS/view.py", line 144, in inferTMSubmit
+    'segmentList':serializers.serialize('json', list(segmentList)),
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/serializers/__init__.py", line 129, in serialize
+    s.serialize(queryset, **options)
+  File "/usr/local/lib/python2.7/site-packages/Django-1.11.4-py2.7.egg/django/core/serializers/base.py", line 84, in serialize
+    concrete_model = obj._meta.concrete_model
+AttributeError: 'list' object has no attribute '_meta'

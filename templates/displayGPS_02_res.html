@@ -1,0 +1,140 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>轨迹显示</title>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="This is my page">
+    <link href="/static/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/static/css/select.css" rel="stylesheet" type="text/css" />
+    <link href="/static/css/default.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/static/js/jquery.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.idTabs.min.js"></script>
+    <script type="text/javascript" src="/static/js/select-ui.min.js"></script>
+
+    <style type="text/css">
+        body, html{width: 100%;height: 100%;margin:0;font-family:"微软雅黑";}
+        #allmap {height:450px; width: 100%;}
+        #control{width:100%;}
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=2Y7d08560nDxsPSdMSWeafp4"></script>
+
+</head>
+
+<body class="sarchbody">
+    <div class="place">
+        <span>位置：</span>
+        <ul class="placeul">
+            <li>轨迹显示</li>
+            <li>固定轨迹ID段显示</li>
+        </ul>
+    </div>
+    <div class="formbody">
+        <div id="usual1" class="usual">
+            <form id="form" name="form" action="/displayGPSByIdSubmit" method="get">
+                <ul class="seachform1">
+                    <li><label>起ID：</label><input name="startId" type="text"
+                        class="scinput1" value="{{startIdStr}}"/></li>
+                    <li><label>终ID：</label><input name="endId" type="text"
+                        class="scinput1" value="{{endIdStr}}"/></li>
+                </ul>
+
+                <ul class="seachform1">
+                    <li class="sarchbtn"><label>&nbsp;</label>
+                    <input name="" type="submit" class="scbtn" value="轨迹显示"/></li>
+                </ul>
+            </form>
+        </div>
+        <div class="formtitle">
+            <span>显示结果</span>
+        </div>
+        <div id="allmap"></div>
+    </div>
+</body>
+
+</html>
+
+<script type="text/javascript">
+    var pointsList = {{points|safe}};
+    var pointArray = [];
+    var tpPointArray = [];
+    var displayTPInfo = [];
+    for(var point in pointsList) {
+        // 要显示的GPS点
+        pointArray.push(new BMap.Point(pointsList[point]["fields"]["longitude"], 
+            pointsList[point]["fields"]["latitude"]));
+        // 要显示覆盖物的点
+        if(pointsList[point]["fields"]["tp"] == 1) {
+            tpPointArray.push(new BMap.Point(pointsList[point]["fields"]["longitude"], 
+            pointsList[point]["fields"]["latitude"]));
+            displayTPInfo.push(pointsList[point]["fields"]["longitude"].toString() + ',' + 
+            pointsList[point]["fields"]["latitude"].toString() + ',' + pointsList[point]["fields"]["day_time"]);
+        }
+    }
+    // 百度地图API功能
+    var map = new BMap.Map("allmap");
+    var centerIndex = Math.floor(pointsList.length / 2);
+    map.centerAndZoom(new BMap.Point(pointsList[centerIndex]["fields"]["longitude"], 
+            pointsList[centerIndex]["fields"]["latitude"]), 18);
+    map.enableScrollWheelZoom();
+
+    // 添加带有定位的导航控件
+    var navigationControl = new BMap.NavigationControl({
+        // 靠左上角位置
+        anchor: BMAP_ANCHOR_TOP_LEFT,
+        // LARGE类型
+        type: BMAP_NAVIGATION_CONTROL_LARGE,
+        // 启用显示定位
+        enableGeolocation: true
+    });
+    map.addControl(navigationControl);
+
+    var polyline = new BMap.Polyline(pointArray, {strokeColor:"blue", strokeWeight:2, strokeOpacity:0.5});   //创建折线
+    map.addOverlay(polyline);   //增加折线
+
+    //显示覆盖物开始点和结束点
+    var myStartIcon = new BMap.Icon("/static/images/startIcon.png", new BMap.Size(32, 100), {
+        imageOffset: new BMap.Size(2, 4)
+      });
+    var markerStart = new BMap.Marker(pointArray[0], {icon:myStartIcon});
+    map.addOverlay(markerStart);
+
+    var myEndIcon = new BMap.Icon("/static/images/endIcon.png", new BMap.Size(32, 100), {
+        imageOffset: new BMap.Size(4, 9)
+      });
+    var markerEnd = new BMap.Marker(pointArray[pointArray.length - 1], {icon:myEndIcon});
+    map.addOverlay(markerEnd);
+
+    //显示覆盖物换乘点
+    for (var i in tpPointArray) {
+        var tpIcon = new BMap.Icon("/static/images/tpIcon.png", new BMap.Size(32, 100), {
+            imageOffset: new BMap.Size(10, 18)
+        });
+        var marker = new BMap.Marker(tpPointArray[i], {icon:tpIcon}); // 创建标注
+        map.addOverlay(marker);
+        content = displayTPInfo[i];
+        addClickHandler(content,marker);
+    }
+    var opts = {
+                width : 100,     // 信息窗口宽度
+                height: 40,     // 信息窗口高度
+                title : "换乘点详情" , // 信息窗口标题
+                enableMessage:true//设置允许信息窗发送短息
+               };
+
+    function addClickHandler(content,marker){
+            marker.addEventListener("click",function(e){
+                openInfo(content,e)}
+            );
+    }
+    function openInfo(content,e){
+        var p = e.target;
+        var point = new BMap.Point(p.getPosition().lng, p.getPosition().lat);
+        var infoWindow = new BMap.InfoWindow(content,opts);  // 创建信息窗口对象 
+        map.openInfoWindow(infoWindow,point); //开启信息窗口
+    }
+
+</script>

@@ -1,0 +1,203 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>特征分析</title>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="This is my page">
+    <link href="/static/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/static/css/text.css" rel="stylesheet" type="text/css" />
+    <link href="/static/css/select.css" rel="stylesheet" type="text/css" />
+    <link href="/static/css/default.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/static/js/jquery.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.idTabs.min.js"></script>
+    <script type="text/javascript" src="/static/js/select-ui.min.js"></script>
+    <script type="text/javascript" src="/static/js/echarts.js"></script>
+    <script type="text/javascript" src="/static/js/jquery-1.8.3.min.js"></script>
+</head>
+
+<body class="sarchbody">
+    <div class="place">
+        <span>位置：</span>
+        <ul class="placeul">
+            <li>交通方式推断</li>
+            <li>特征分析</li>
+        </ul>
+    </div>
+    <div class="formbody">
+        <div id="usual1" class="usual">
+            <form id="form" name="form" action="/inferTMSubmit" method="get">
+                <ul class="seachform1">
+                    <li>
+                        <label>选择日期：</label>
+                        <input type="date" class="dfinput" name="targetDate" value="{{searchDate}}" />
+                    </li>
+                </ul>
+                <ul class="seachform1">
+                    <li class="sarchbtn">
+                        <label>&nbsp;</label>
+                        <input name="" type="submit" class="scbtn" value="特征分析" />
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="formtitle">
+            <span>分析结果</span>
+        </div>
+        <table class="tablelist">
+            <tbody>
+                <tr>
+                    <td>
+                        <div id="main" style="height: 400px"></div>
+                        <div id="segment" style="height: 400px"></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <script type="text/javascript">
+        var pointsList = {{points|safe}};
+        var pointsFeaList = {{fea|safe}};
+        console.log(pointsFeaList[0]);
+        var pointVArr = [];
+        var pointAArr = [];
+        var xAxisLabelTime = [];
+        var xAxisLabelId = [];
+        for (var point in pointsList) {
+            pointVArr.push(pointsList[point]["fields"]["velocity"]);
+            pointAArr.push(pointsList[point]["fields"]["acceleration"]);
+            xAxisLabelTime.push(pointsList[point]["fields"]["day_time"]);
+            xAxisLabelId.push(pointsList[point]["pk"].toString());
+        }
+        // console.log(xAxisLabelId);
+
+        segmentXAxisLable = ['85thV', 'MaxV1', 'MaxV2', 'MedianV', 'MinV', 'MeanV', 'Ev', 'Dv', 'HVR', 'MVR', 'LVR', '85thA', 'MaxA1', 'MaxA2', 'MedianA', 'MinA', 'MeanA', 'Ea', 'Da', 'HAR', 'MAR', 'LAR', 'TS', 'ACR', 'BSR', 'ACP', 'HCR', 'SR', 'VCR'];
+        segmentLenged = [];
+        for (var i = 0; i < pointsFeaList.length; ++i) {
+            segmentLenged.push('路段' + (i + 1).toString());
+        }
+
+        // 路径配置
+        require.config({
+            paths: {
+                echarts: 'http://echarts.baidu.com/build/dist'
+            }
+        });
+
+        // 使用
+        require(['echarts', 'echarts/chart/line' // 使用柱状图就加载bar模块，按需加载
+        ], function(ec) {
+            // 基于准备好的dom，初始化echarts图表
+            var myChart = ec.init(document.getElementById('main'));
+
+            var option = {
+                title: {
+                    text: '轨迹速度和加速度分布图',
+                    subtext: ''
+                },
+                tooltip: {
+                    trigger: 'axis'
+                },
+                legend: {
+                    data: ["velocity(m/s)",
+                        "acceleration(m/s2)"
+                    ]
+                },
+                toolbox: {
+                    show: true,
+                    feature: {
+                        mark: { show: true },
+                        dataView: { show: true, readOnly: false },
+                        magicType: { show: true, type: ['line', 'bar'] },
+                        restore: { show: true },
+                        saveAsImage: { show: true }
+                    }
+                },
+                calculable: true,
+                xAxis: [{
+                    type: 'category',
+                    data: xAxisLabelTime, //写特征名称
+                    // axisLabel : {
+                    //     interval : 0,
+                    //     rotate : 60,//60度角倾斜显示
+                    //     formatter : function(val) {
+                    //         return val.split("").join("\n"); //横轴信息文字竖直显示
+                    //     }
+                    // }
+                }],
+                yAxis: [{
+                    type: 'value'
+                }],
+                series: [
+                    //速度特征值
+                    {
+                        "name": "velocity",
+                        "type": "line",
+                        "data": pointVArr
+                    },
+                    //加速度特征值
+                    {
+                        "name": "acceleration",
+                        "type": "line",
+                        "data": pointAArr
+                    }
+                ]
+            };
+
+            // 为echarts对象加载数据 
+            myChart.setOption(option);
+        });
+
+
+        // 使用
+        require(['echarts', 'echarts/chart/bar' // 使用柱状图就加载bar模块，按需加载
+        ], function(ec) {
+            // 基于准备好的dom，初始化echarts图表
+            var myChart = ec.init(document.getElementById('segment'));
+
+            var option = {
+                tooltip: {
+                    show: true
+                },
+                title: {
+                    text: '轨迹路段特征分布图',
+                    subtext: ''
+                },
+                legend: {
+                    data: segmentLenged
+                },
+                xAxis: [{
+                    type: 'category',
+                    data: segmentXAxisLable, //写特征名称 23 维
+                    // axisLabel: {
+                    //     interval: 0,
+                    //     rotate: 60, //60度角倾斜显示
+                    //     formatter: function(val) {
+                    //         return val.split("").join("\n"); //横轴信息文字竖直显示
+                    //     }
+                    // }
+
+                }],
+                yAxis: [{
+                    type: 'value'
+                }],
+                series: []
+            };
+
+            for (var i = 0; i < pointsFeaList.length; ++i) {
+                option.series[i] = new Object();
+                option.series[i].name = "路段" + (i+1).toString;
+                option.series[i].type = 'bar';
+                option.series[i].data = new Array(pointsFeaList[i][1],pointsFeaList[i][2],pointsFeaList[i][3],pointsFeaList[i][4],pointsFeaList[i][5],pointsFeaList[i][6],pointsFeaList[i][7],pointsFeaList[i][8],pointsFeaList[i][9],pointsFeaList[i][10],pointsFeaList[i][11],pointsFeaList[i][12],pointsFeaList[i][13],pointsFeaList[i][14],pointsFeaList[i][15],pointsFeaList[i][16],pointsFeaList[i][17],pointsFeaList[i][18],pointsFeaList[i][19],pointsFeaList[i][20],pointsFeaList[i][21],pointsFeaList[i][22],pointsFeaList[i][23],pointsFeaList[i][24],pointsFeaList[i][25],pointsFeaList[i][26],pointsFeaList[i][27],pointsFeaList[i][28],pointsFeaList[i][29]);
+            }
+
+            // 为echarts对象加载数据 
+            myChart.setOption(option);
+        });
+        </script>
+    </div>
+</body>
+
+</html>

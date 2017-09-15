@@ -1,0 +1,121 @@
+<html>
+
+<head>
+    <!-- <base href="<%=basePath%>"> -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>My JSP 'left.jsp' starting page</title>
+    <link href="/static/css/style.css" rel="stylesheet" type="text/css" />
+    <script language="JavaScript" src="/static/js/jquery.js"></script>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="This is my page">
+    <script type="text/javascript">
+    $(function() {
+        //导航切换
+        $(".menuson .header").click(function() {
+            var $parent = $(this).parent();
+            $(".menuson>li.active").not($parent).removeClass("active open").find('.sub-menus').hide();
+
+            $parent.addClass("active");
+            if (!!$(this).next('.sub-menus').size()) {
+                if ($parent.hasClass("open")) {
+                    $parent.removeClass("open").find('.sub-menus').hide();
+                } else {
+                    $parent.addClass("open").find('.sub-menus').show();
+                }
+
+
+            }
+        });
+
+        // 三级菜单点击
+        $('.sub-menus li').click(function(e) {
+            $(".sub-menus li.active").removeClass("active")
+            $(this).addClass("active");
+        });
+
+        $('.title').click(function() {
+            var $ul = $(this).next('ul');
+            $('dd').find('.menuson').slideUp();
+            if ($ul.is(':visible')) {
+                $(this).next('.menuson').slideUp();
+            } else {
+                $(this).next('.menuson').slideDown();
+            }
+        });
+    })
+    </script>
+</head>
+
+<body style="background: #fff3e1;">
+    <div class="lefttop">
+        <span></span>导航
+    </div>
+    <dl class="leftmenu">
+        <dd>
+            <div class="title">
+                <span><img src="/static/images/leftico01.png" /></span>个人信息
+            </div>
+            <ul class="menuson">
+                <li>
+                    <div class="header">
+                        <cite></cite> <a target="rightFrame">修改密码</a>
+                        <i></i>
+                    </div>
+                </li>
+            </ul>
+        </dd>
+        <dd>
+            <div class="title">
+                <span><img src="/static/images/leftico01.png" /></span>轨迹导入
+            </div>
+            <ul class="menuson">
+                <li>
+                    <div class="header">
+                        <cite></cite> <a href="/importGPS" target="rightFrame">轨迹导入</a>
+                        <i></i>
+                    </div>
+                </li>
+            </ul>
+        </dd>
+        <dd>
+            <div class="title">
+                <span><img src="/static/images/leftico01.png" /></span>轨迹显示
+            </div>
+            <ul class="menuson">
+                <li>
+                    <div class="header">
+                        <cite></cite> <a href="/displayGPSByDate" target="rightFrame">固定日期轨迹显示</a>
+                        <i></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="header">
+                        <cite></cite> <a href="/displayGPSById" target="rightFrame">固定轨迹ID段显示</a>
+                    </div>
+                </li>
+            </ul>
+        </dd>
+        <dd>
+            <div class="title">
+                <span><img src="/static/images/leftico01.png" /></span>交通方式推断
+            </div>
+            <ul class="menuson">
+                <li>
+                    <div class="header">
+                        <cite></cite> <a href="/feaAnalysis" target="rightFrame">特征分析</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="header">
+                        <cite></cite> <a href="/inferTM" target="rightFrame">交通方式推断</a>
+                    </div>
+                </li>
+            </ul>
+        </dd>
+    </dl>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>轨迹显示</title>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="This is my page">
+    <link href="/static/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/static/css/select.css" rel="stylesheet" type="text/css" />
+    <link href="/static/css/default.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/static/js/jquery.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.idTabs.min.js"></script>
+    <script type="text/javascript" src="/static/js/select-ui.min.js"></script>
+    <!-- <script type="text/javascript" src="/static/js/kindeditor.js"></script> -->
+    <!-- <script type="text/javascript">
+    KE.show({
+        id: 'content7',
+        cssPath: './index.css'
+    });
+    </script> -->
+</head>
+
+<body class="sarchbody">
+    <div class="place">
+        <span>位置：</span>
+        <ul class="placeul">
+            <li>轨迹显示</li>
+            <li>固定轨迹ID段显示</li>
+        </ul>
+    </div>
+    <div class="formbody">
+        <div id="usual1" class="usual">
+            <form id="form" name="form" action="/displayGPSByIdSubmit" method="get">
+                <ul class="seachform1">
+                    <li><label>起ID：</label><input name="startId" type="text"
+                        class="scinput1" /></li>
+                    <li><label>终ID：</label><input name="endId" type="text"
+                        class="scinput1" /></li>
+                </ul>
+
+                <ul class="seachform1">
+                    <li class="sarchbtn"><label>&nbsp;</label>
+                    <input name="" type="submit" class="scbtn" value="轨迹显示"/></li>
+                </ul>
+            </form>
+        </div>
+        <div class="formtitle">
+            <span>显示结果</span>
+        </div>
+        <table class="tablelist">
+            <tbody>
+                <tr>
+                    <td>暂无结果</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

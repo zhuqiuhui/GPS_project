@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <!-- <base href="<%=basePath%>"> -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>顶部</title>
+    <link href="/static/css/style.css" rel="stylesheet" type="text/css" />
+    <script language="JavaScript" src="/static/js/jquery.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        //顶部导航切换
+        $(".nav li a").click(function() {
+            $(".nav li a.selected").removeClass("selected")
+            $(this).addClass("selected");
+        })
+    })
+    </script>
+</head>
+
+<body style="background: url(/static/images/topbg.gif) repeat-x;">
+    <div class="topleft">
+        <ul class="nav">
+            <!-- <li><a href="" target="rightFrame"><img
+                    src="images/icon0.png" title="添加菜谱" />
+                    <h2>添加菜谱</h2></a></li>
+            <li><a href="" target="rightFrame"><img
+                    src="images/icon5.png" title="菜谱列表" />
+                    <h2>菜谱列表</h2></a></li> -->
+                    <!-- <center><strong><h1>居民交通方式推断系统</h1></strong></center> -->
+
+        </ul>
+    </div>
+    <!-- 居民交通方式推断系统【TODO变大】 -->
+    <div class="topright">
+
+        <ul>
+            <li><span></span>帮助</li>
+            <li>关于</li>
+            <li><a href="" target="_parent">退出</a></li>
+        </ul>
+
+        <div class="user">
+            <span>四川大学视觉计算实验室</span>
+            <!--  <i>消息</i> -->
+            <!-- <b>0</b> -->
+        </div>
+    </div>
+</body>
+
+</html>

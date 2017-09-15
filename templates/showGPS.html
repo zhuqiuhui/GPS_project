@@ -1,0 +1,14 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Upload Successfully</title>
+    </head>
+    <body>
+        <p>GPS轨迹点</p>
+        {% for point in point_list %}
+        <p>{{point.id}}&nbsp&nbsp&nbsp:&nbsp&nbsp&nbsp{{point.latitude}}</p>
+        <p>{{point.longitude}}&nbsp&nbsp&nbsp:&nbsp&nbsp&nbsp{{point.day_time}}</p>
+        <br>
+        {% endfor %}
+    </body>
+</html>
